@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Primera Web</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCS SAFETY | High-End Web Development & Cyber Defense</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body>
-  <header class="hero">
-    <h1>Hi, Im Nahuel</h1>
-    <p>Esta es mi primera página web subida a GitHub 🚀</p>
-    <button id="botonSaludo">Haz click</button>
-  </header>
+<body class="bg-black text-white selection:bg-cyan-500 selection:text-black">
 
-  <main class="contenedor">
-    <section class="card">
-      <h2>Sobre mí</h2>
-      <p>
-        Estoy aprendiendo a crear páginas web paso a paso con HTML, CSS y JavaScript.
-      </p>
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-cyan-900/20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-900/20 blur-[120px] rounded-full"></div>
+    </div>
+
+    <nav class="p-8 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="text-2xl font-black tracking-tighter italic">
+            NCS<span class="text-cyan-500">.SAFETY</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-10 text-xs font-bold tracking-widest uppercase text-slate-400">
+            <a href="#services" class="hover:text-white transition">Services</a>
+            <a href="/deportes.html" class="hover:text-white transition">Portfolio</a>
+            <a href="mailto:nahue422@hotmail.com" class="border border-cyan-500/50 text-cyan-400 px-6 py-2 rounded-full hover:bg-cyan-500 hover:text-black transition duration-300">
+                Get in touch
+            </a>
+        </div>
+    </nav>
+
+    <section class="flex flex-col items-center justify-center min-h-[85vh] text-center px-6">
+        <div class="mb-6 py-1 px-4 bg-slate-900/50 border border-slate-800 rounded-full text-cyan-500 text-[10px] font-black uppercase tracking-[0.2em]">
+            Cybersecurity-First Web Solutions
+        </div>
+        
+        <h1 class="text-6xl md:text-8xl font-[900] tracking-tight leading-[0.9] mb-8">
+            Worry less. <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">Secure more.</span>
+        </h1>
+
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
+            I build high-performance landing pages for startups and businesses worldwide. 
+            <span class="text-white">Bulletproof security</span>, lightning speed, and international standards.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-5">
+            <a href="mailto:nahue422@hotmail.com" class="bg-white text-black font-black py-5 px-12 rounded-2xl hover:bg-cyan-400 hover:scale-105 transition duration-300">
+                START YOUR PROJECT
+            </a>
+            <a href="#security" class="bg-slate-900/80 backdrop-blur-md border border-slate-800 py-5 px-12 rounded-2xl font-bold hover:bg-slate-800 transition">
+                SECURITY AUDIT
+            </a>
+        </div>
+
+        <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-40 grayscale">
+            <div class="text-sm font-bold tracking-widest">CLOUDFLARE</div>
+            <div class="text-sm font-bold tracking-widest">NEXT.JS</div>
+            <div class="text-sm font-bold tracking-widest">GITHUB</div>
+            <div class="text-sm font-bold tracking-widest">STRIPE</div>
+        </div>
     </section>
 
-    <section class="card">
-      <h2>Mis objetivos</h2>
-      <ul>
-        <li>Aprender HTML</li>
-        <li>Aprender CSS</li>
-        <li>Aprender JavaScript</li>
-        <li>Subir proyectos a GitHub</li>
-      </ul>
-    </section>
-  </main>
-
-  <script src="scripts.js"></script>
 </body>
 </html>
